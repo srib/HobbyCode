@@ -79,7 +79,7 @@ def FetchFiles(ParsedArguments):
         FetchURL(FileURL,FileName)
 
     endtime = time.time();
-    print 'Time needed to fetch', endtime-starttime
+    print 'Time needed to fetch', (endtime-starttime)/60.0, 'minutes'
 
 def main():
     ParsedArguments = ParseCommandLineArgs();
